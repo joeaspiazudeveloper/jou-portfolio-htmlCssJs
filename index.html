@@ -8,366 +8,378 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Joe Dev</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#profile">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Joe Dev</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <!-- NAVIGATIONS BARS -->
+    <header>
+      <nav id="desktop-nav" class="desktop-nav">
+        <div class="desktop-nav__logo">Joe Dev</div>
+        <div>
+          <ul class="desktop-nav__links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </nav>
+      <nav id="hamburger-nav" class="hamburger-nav">
+        <div class="hamburger-nav__logo">Joe Dev</div>
+        <div class="hamburger-nav__menu-icon">
+          <div class="hamburger-nav__icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="hamburger-nav__links">
+            <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/JoePic.png" alt="Joe Dev profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, This is</p>
-        <h1 class="title">Joe Dev</h1>
-        <p class="section__text__p2">Software Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/JoeAspiazuResume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
+      </nav>
+    </header>
+    <main>
+      <!-- PROFILE -->
+      <section id="profile" class="profile">
+        <div class="section__pic-container">
+          <img src="./assets/JoePic.png" alt="Joe Dev profile picture" />
         </div>
-        <div id="socials-container">
-          <a href="https://www.linkedin.com/in/joedev90" target="_blank" rel="noopener noreferrer">
+        <div class="section__text">
+          <p class="section__text__p1 section__text__name">Hello, This is</p>
+          <h1 class="title">Joe Dev</h1>
+          <p class="section__text__p2 section__text__position">Software Engineer</p>
+          <div class="btn-container section__text-btn">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/JoeAspiazuResume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container" class="section__socials">
+            <a href="https://www.linkedin.com/in/joedev90" target="_blank" rel="noopener noreferrer">
+              <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+              />
+            </a>
+            <a href="https://github.com/joeaspiazudeveloper" target="_blank" rel="noopener noreferrer">
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about" class="about">
+        <p class="section__text__name">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/profile_joe_pic22.png"
+              alt="About picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details">
+            <div class="section-details">
+              <div class="section-details__container section-details__about">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>10+ years <br />Frontend and Software Development</p>
+              </div>
+              <div class="section-details__container section-details__about">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              </div>
+            </div>
+            <div class="section-text">
+              <p class="about-description">
+                Hi There! This is Joe and I love all related tothe software development and computing world. 
+                One of my passions is learning new tools to solve problems envolved software development specially in the 
+                frontend side.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <p class="section__text__p1 section__text__name">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="section-details-container">
+          <div class="section-details">
+            <div class="section-details__container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Angular</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>ReactJS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>NextJS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="section-details__container">
+              <h2 class="experience-sub-title">Other Technologies</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node JS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>.NET</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Azure Devops</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECTS -->
+      <section id="projects">
+        <p class="section__text__p1 section__text__name">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="section-details-container">
+          <div class="section-details">
+            <div class="section-details__container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.jpeg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Angular 17 (From official doc) First App</h2>
+              <div class="btn-container">
+                <a target="_blank"
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/joeaspiazudeveloper/ngFirstApp"
+                >
+                  Github
+                </a>
+                <a target="_blank"
+                  class="btn btn-color-2 project-btn"
+                  href="https://ngfirstapp.netlify.app/"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="section-details__container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.jpeg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Angular 17 List App with Tailwind</h2>
+              <div class="btn-container">
+                <a target="_blank"
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/joeaspiazudeveloper/ngproduct-crud-tailwind"
+                >
+                  Github
+                </a>
+                <a target="_blank"
+                  class="btn btn-color-2 project-btn"
+                  href="https://ngproductlist-tailwind.netlify.app/"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="section-details__container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Angular Crud witn NgRx</h2>
+              <div class="btn-container">
+                <a target="_blank"
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/joeaspiazudeveloper/ngrxCrud"
+                >
+                  Github
+                </a>
+                <a target="_blank"
+                  class="btn btn-color-2 project-btn"
+                  href="https://ngrxcrud.netlify.app/"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section id="contact">
+        <p class="section__text__p1 section__text__name">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:joeaspiazudeveloper@gmail.com">joeaspiazudeveloper@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
             <img
               src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
             />
-          </a>
-          <a href="https://github.com/joeaspiazudeveloper" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
-              class="icon"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile_joe_pic22.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container about-detail-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>10+ years <br />Frontend and Software Development</p>
-            </div>
-            <div class="details-container about-detail-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p class="about-description">
-              Hi There! This is Joe and I love all related tothe software development and computing world. 
-              One of my passions is learning new tools to solve problems envolved software development specially in the 
-              frontend side.
-            </p>
-            
+            <p><a target="_blank" href="https://www.linkedin.com/in/joedev90/">LinkedIn</a></p>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Angular</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ReactJS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NextJS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Other Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>.NET</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Azure Devops</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <a target="_blank"
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/joeaspiazudeveloper"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/joeaspiazudeveloper"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/joeaspiazudeveloper"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/joeaspiazudeveloper"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/joeaspiazudeveloper"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:joeaspiazudeveloper@gmail.com">joeaspiazudeveloper@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a target="_blank" href="https://www.linkedin.com/in/joedev90/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
+    <!-- FOOTER -->
     <footer>
       <p>Copyright &#169; 2024 The Extra Mile Agency 😊🙂. All Rights Reserved.</p>
     </footer>
