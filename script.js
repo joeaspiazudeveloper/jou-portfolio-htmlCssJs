@@ -1,5 +1,5 @@
 let mediaQueryObj = window.matchMedia("(prefers-color-scheme: dark)");
-let isDarkMode = mediaQueryObj.matches; //
+let isDarkMode = mediaQueryObj.matches;
 if (isDarkMode) {
   document.body.className = "dark";
 } else {

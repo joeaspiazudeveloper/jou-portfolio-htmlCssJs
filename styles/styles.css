@@ -20,6 +20,7 @@ body.dark {
   --bg-color1: black;
   --font-color2: #c3c3c3;
   --color-container: rgb(5, 5, 5);
+  --font-color1: rgb(150, 150, 150);
 }
 
 body.dark .section-details__about img,
